@@ -1,0 +1,59 @@
+{
+  "name": "slack-status-activity",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build-main",
+    "build-main": "tsc ./src/index.ts --outDir ./dist",
+    "start": "electron ./dist",
+    "clean": "rm -rf .cache/ && rm -rf dist/",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "3.24.0",
+    "@blueprintjs/icons": "3.14.0",
+    "@emotion/core": "10.0.28",
+    "@hot-loader/react-dom": "16.13.0",
+    "@slack/web-api": "^5.8.0",
+    "@types/react-router": "5.1.4",
+    "@types/react-router-dom": "5.1.3",
+    "emotion": "10.0.27",
+    "keytar": "^5.4.0",
+    "menubar": "^8.0.1",
+    "normalize.css": "8.0.1",
+    "path": "^0.12.7",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-router": "5.1.2",
+    "react-router-dom": "5.1.2",
+    "whatwg-fetch": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/parcel-env": "0.0.0",
+    "@types/react": "16.9.23",
+    "@types/react-dom": "16.9.5",
+    "@typescript-eslint/eslint-plugin": "2.24.0",
+    "@typescript-eslint/parser": "2.24.0",
+    "electron": "^8.1.1",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-config-react": "1.1.7",
+    "eslint-plugin-emotion": "10.0.27",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.0",
+    "parcel-bundler": "1.12.4",
+    "prettier": "1.19.1",
+    "typescript": "3.8.3"
+  },
+  "alias": {
+    "react-dom": "@hot-loader/react-dom"
+  },
+  "prettier": {
+    "trailingComma": "all"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}
