@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "npm run build-main",
-    "build-main": "tsc ./src/index.ts --outDir ./dist",
+    "build-main": "tsc --outDir ./dist",
     "start": "electron ./dist",
     "clean": "rm -rf .cache/ && rm -rf dist/",
     "lint": "eslint . --ext .ts,.tsx",
@@ -19,6 +19,7 @@
     "@types/react-router": "5.1.4",
     "@types/react-router-dom": "5.1.3",
     "active-win": "^6.1.0",
+    "electron-store": "^5.2.0",
     "emotion": "10.0.27",
     "keytar": "^5.4.0",
     "menubar": "^8.0.1",
