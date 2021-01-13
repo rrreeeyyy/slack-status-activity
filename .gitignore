@@ -1,3 +1,4 @@
 /.cache/
 /dist/
 node_modules
+slack-status-activity-darwin-x64
